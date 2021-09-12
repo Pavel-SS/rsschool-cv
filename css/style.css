@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Alumni Sans', sans-serif;
+  font-size: 18px;
+  color: #fff; }
+
+body {
+  background-color: white; }
+
+.container-cv {
+  margin: 25px auto;
+  max-width: 55rem;
+  box-shadow: 0px 5px 15px rgba(204, 0, 0, 0.945);
+  border-radius: 5px; }
+
+.resume {
+  display: flex;
+  justify-content: space-between;
+  background-color: #000000; }
+  .resume-left {
+    flex: 0 0 33%; }
+    .resume-left section {
+      padding-top: 5px; }
+      .resume-left section:first-child {
+        padding-top: 0px; }
+      .resume-left section h3 {
+        position: relative;
+        width: 100px;
+        background-color: red;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 3px 7px;
+        border-radius: 15px 0 15px 0;
+        margin-bottom: 10px; }
+      .resume-left section ul {
+        margin: 5px 10px; }
+        .resume-left section ul li {
+          list-style-type: none;
+          position: relative; }
+  .resume-right {
+    flex: 0 0 67%; }
+    .resume-right section {
+      background-color: #c90505; }
+
+.descr {
+  padding: 10px 0; }
+
+.divider {
+  display: block;
+  height: 10px;
+  background-color: #fff; }
+  .divider_thin {
+    height: 0.15em; }
+
+.title {
+  display: flex;
+  align-items: center;
+  height: 70px; }
+  .title img {
+    object-fit: cover;
+    height: 100%;
+    background-color: #fff; }
+  .title h3 {
+    flex: 1;
+    background-color: #000;
+    height: 70px; }
+
+.title_fs27 {
+  font-size: 1.5rem;
+  text-align: center; }
+
+.title_fs29 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1rem; }
+
+.title_fs54 {
+  font-size: 3rem;
+  font-weight: 700;
+  padding-left: 7px; }
+
+.text_fs23 {
+  font-size: 1.3rem;
+  font-weight: 600; }
+
+.text_fs27 {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  font-weight: 500; }
+
+.text_fs32 {
+  font-size: 1.8rem;
+  line-height: 54px; }
+
+.descr_fs32 {
+  margin: 0px 25px;
+  font-size: 1.8rem; }
+
+header {
+  background-color: #cc0000;
+  border-radius: 5px 5px 0 0; }
+  header .cv {
+    text-align: right;
+    padding: 2px 10px;
+    font-size: 1.4rem; }
+
+.portrait {
+  position: relative;
+  width: 100%;
+  height: 320px;
+  text-align: center;
+  border: 12px solid #fafafa;
+  background-color: white;
+  box-sizing: border-box; }
+  .portrait img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    backface-visibility: hidden;
+    transition: 1s ease; }
+  .portrait h1 {
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 2rem;
+    color: rgba(204, 0, 0, 0.7);
+    transition: 1s ease; }
+  .portrait p {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    color: #000;
+    transition: 1s ease; }
+  .portrait .name {
+    position: absolute;
+    opacity: 0.8;
+    text-align: center;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    transition: 1s ease; }
+  .portrait:hover img {
+    opacity: 1;
+    transition: 1s ease; }
+  .portrait:hover .name {
+    position: absolute;
+    margin-bottom: 2px;
+    opacity: 1;
+    text-align: left;
+    transform: translate(-90%, 0%);
+    transition: 1s ease; }
+    .portrait:hover .name h1 {
+      display: inline-block;
+      color: white;
+      font-size: 2rem;
+      line-height: 1.2rem;
+      font-weight: 400;
+      transition: 1s ease;
+      text-align: left; }
+    .portrait:hover .name p {
+      display: inline-block;
+      color: black;
+      transition: 1s ease;
+      font-size: 1.2rem;
+      font-weight: 600;
+      text-align: left;
+      background-color: rgba(255, 255, 255, 0.486);
+      border-radius: 5px;
+      padding: 0 2px 0 2px; }
+
+.contact__ways {
+  position: relative; }
+  .contact__ways li {
+    display: block;
+    height: 36px;
+    text-align: left;
+    padding-left: 50px;
+    margin-bottom: 5px; }
+  .contact__ways_phone {
+    background: url("../img/icons/phone.svg") no-repeat; }
+  .contact__ways_mail {
+    background: url("../img/icons/email.svg") no-repeat; }
+  .contact__ways_telegram {
+    background: url("../img/icons/telegram.svg") no-repeat; }
+
+.skills__list li {
+  height: 54px;
+  text-align: left;
+  padding-left: 54px; }
+
+.skills__list_html {
+  background: url("../img/icons/html.svg") 0% 50% no-repeat; }
+
+.skills__list_css {
+  background: url("../img/icons/css.svg") 0% 50% no-repeat; }
+
+.skills__list_sass {
+  background: url("../img/icons/sass.svg") 0% 50% no-repeat; }
+
+.skills__list_js {
+  background: url("../img/icons/javascript.svg") 0% 50% no-repeat; }
+
+.skills__list_gulp {
+  background: url("../img/icons/gulp.svg") 0% 50% no-repeat; }
+
+.skills__list_icon {
+  background-size: 50px; }
+
+.skills h3.skills__title {
+  margin-bottom: 0px; }
+
+.languages__list li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 5px; }
+  .languages__list li img {
+    width: 4rem;
+    height: 2.5rem;
+    margin-right: 5px; }
+
+.courses ul li {
+  list-style-type: none;
+  position: relative; }
+
+section.code {
+  background-color: #000; }
+  section.code .code__img {
+    width: 600px;
+    transition: 1s; }
+  section.code .code__img:hover {
+    transform: scale(1.5) translateX(-15%); }
+
+.footer {
+  height: 70px;
+  background-color: #cc0000;
+  padding: 5px 10px 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .footer .github {
+    cursor: auto; }
+    .footer .github img {
+      width: 50px;
+      height: 50px;
+      box-sizing: border-box; }
+      .footer .github img:hover {
+        background-color: black;
+        border: 2px solid #000;
+        border-radius: 50%; }
+  .footer .rss {
+    cursor: auto; }
+    .footer .rss img {
+      width: auto;
+      height: 50px;
+      padding: 2px; }
+      .footer .rss img:hover {
+        background-color: white; }
+  .footer p {
+    vertical-align: baseline; }
